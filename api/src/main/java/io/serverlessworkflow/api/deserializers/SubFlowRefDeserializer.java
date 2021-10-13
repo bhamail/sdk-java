@@ -47,7 +47,6 @@ public class SubFlowRefDeserializer extends StdDeserializer<SubFlowRef> {
   @Override
   public SubFlowRef deserialize(JsonParser jp, DeserializationContext ctxt) throws IOException {
 
-    ObjectMapper mapper = (ObjectMapper) jp.getCodec();
     JsonNode node = jp.getCodec().readTree(jp);
 
     SubFlowRef subflowRef = new SubFlowRef();
